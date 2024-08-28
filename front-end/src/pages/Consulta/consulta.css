@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.Corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 100vh;
+    gap: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.Corpo h2 {
+    color: rgb(25, 60, 150);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgb(245, 240, 240);
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.Formulario {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: rgb(245, 240, 240);
+    /* overflow-x: hidden; */
+}
+
+.parte-1, .parte-2, .parte-3 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: rgb(25, 60, 150);
+}
+
+select, input {
+    /* background-color: red; */
+    width: 100%;
+    font-size: 14px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(25, 60, 150);
+}
+
+option {
+    background-color: rgb(25, 60, 150);
+    color: white;
+}
+
+.tabela-container {
+    display: flex;
+    justify-content: center;
+    min-height: 400px;
+    overflow-x: auto;
+}
+
+.tabela {
+    width: 95%;
+    height: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: center;
+}
+
+.tabela thead th {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.tabela thead tr{
+    background-color: rgb(25, 60, 150);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabela tbody tr {
+    border-bottom: 2px solid;
+}
+
+.tabela th, .tabela td {
+    border-left: 1px solid rgb(25, 60, 150);
+    border-right: 1px solid rgb(25, 60, 150);
+    padding: 0px 20px;
+}
+
+.bts {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(25, 60, 150);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+}
+
+.bt-consulta:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
