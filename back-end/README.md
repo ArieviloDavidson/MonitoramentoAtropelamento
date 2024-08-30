@@ -22,27 +22,9 @@ mysql -u root -p
 
 Aqui, `-u root` indica o nome de usuário (neste caso, `root`), e `-p` pedirá a senha para o usuário root.
 
-### 2. Crie o Banco de Dados
+### 2. Importe o Arquivo .SQL
 
-Depois de fazer login no MySQL, crie o banco de dados com o seguinte comando:
-
-```sql
-CREATE DATABASE registro_atropelamentos;
-```
-
-Isso criará o banco de dados vazio chamado `registro_atropelamentos`.
-
-### 3. Use o Banco de Dados Criado
-
-Agora, para usar o banco de dados criado, execute:
-
-```sql
-USE registro_atropelamentos;
-```
-
-### 4. Importe o Arquivo .SQL
-
-Com o banco de dados selecionado, você pode importar o arquivo `.sql` que contém a estrutura e os dados do banco. Se estiver utilizando a linha de comando, basta executar:
+Não se preocupe em criar o bando de dados pois no arquivo sla já contém esta configuração, você pode importar o arquivo `.sql` que contém a estrutura e os dados do banco. Se estiver utilizando a linha de comando, basta executar:
 
 ```bash
 source /caminho/para/seu/arquivo.sql;
