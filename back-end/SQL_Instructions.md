@@ -1,0 +1,55 @@
+
+# Instruções Básicas para Uso do Arquivo .SQL
+
+Este guia explica como utilizar o arquivo `.sql` para criar o banco de dados necessário na sua máquina local.
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter os seguintes programas instalados em sua máquina:
+
+- **MySQL** ou **MariaDB** (Versão 5.7 ou superior).
+- Acesso a um cliente MySQL, como o MySQL Workbench ou a linha de comando do MySQL.
+
+## Passos para Criar o Banco de Dados
+
+### 1. Acesse o MySQL
+
+Se você estiver utilizando a linha de comando, abra o terminal ou prompt de comando e digite:
+
+```bash
+mysql -u root -p
+```
+
+Aqui, `-u root` indica o nome de usuário (neste caso, `root`), e `-p` pedirá a senha para o usuário root.
+
+### 2. Crie o Banco de Dados
+
+Depois de fazer login no MySQL, crie o banco de dados com o seguinte comando:
+
+```sql
+CREATE DATABASE registro_atropelamentos;
+```
+
+Isso criará o banco de dados vazio chamado `registro_atropelamentos`.
+
+### 3. Use o Banco de Dados Criado
+
+Agora, para usar o banco de dados criado, execute:
+
+```sql
+USE registro_atropelamentos;
+```
+
+### 4. Importe o Arquivo .SQL
+
+Com o banco de dados selecionado, você pode importar o arquivo `.sql` que contém a estrutura e os dados do banco. Se estiver utilizando a linha de comando, basta executar:
+
+```bash
+source /caminho/para/seu/arquivo.sql;
+```
+
+Isso carregará a estrutura e os dados definidos no arquivo `.sql` para o banco de dados `registro_atropelamentos`.
+
+## Conclusão
+
+Seguindo esses passos, você terá o banco de dados `registro_atropelamentos` configurado em sua máquina, pronto para ser usado com a API.
